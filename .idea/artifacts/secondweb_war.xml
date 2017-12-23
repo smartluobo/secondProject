@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="secondweb:war">
+    <output-path>$PROJECT_DIR$/secondweb/target</output-path>
+    <root id="archive" name="secondweb.war">
+      <element id="artifact" artifact-name="secondweb:war exploded" />
+    </root>
+  </artifact>
+</component>

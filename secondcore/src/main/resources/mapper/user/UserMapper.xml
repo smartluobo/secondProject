@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smart.luobo.dao.UserDao">
+    <select id="queryAllUser" resultType="com.smart.luobo.entity.IdeaUser">
+        SELECT SERIALNO,USERNAME,PASS,EMAIL from IDEA_TEST
+    </select>
+
+    <update id="updateUserBySerilno" parameterType="com.smart.luobo.entity.IdeaUser">
+      UPDATE IDEA_TEST a set a.PASS = #{pass} WHERE a.SERIALNO = #{serilno}
+    </update>
+
+    <insert id="insertUser" parameterType="com.smart.luobo.entity.IdeaUser">
+        INSERT INTO IDEA_TEST(SERIALNO, USERNAME, PASS, EMAIL)
+        VALUES (
+            #{serilno,jdbcType=VARCHAR},
+            #{userName,jdbcType=VARCHAR},
+            #{pass,jdbcType=VARCHAR},
+            #{email,jdbcType=VARCHAR})
+    </insert>
+
+</mapper>

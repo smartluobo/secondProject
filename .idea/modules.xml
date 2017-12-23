@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/secondcore/secondcore.iml" filepath="$PROJECT_DIR$/secondcore/secondcore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/secondproject.iml" filepath="$PROJECT_DIR$/secondproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/secondweb/secondweb.iml" filepath="$PROJECT_DIR$/secondweb/secondweb.iml" />
+    </modules>
+  </component>
+</project>
